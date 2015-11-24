@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>4.2 - To Do List</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+<style>
+body {
+      background-color: white;
+  }
+
+  
+  p {
+      font-family: "Times New Roman";
+      font-size: 20px;
+  }
+
+  #header {
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:5px;
+  }
+  
+  #section {
+    width:1500px;
+    float:left;
+    padding:10px;    
+  }
+  #footer {
+    background-color:#000099;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:2px;     
+  }
+
+  </style>
+  </head>
+  <body>
+    
+    <div id="header">
+    <h3>To Do List</h3>
+    </div>
+
+<style>
+body {
+      background-color: white;
+  }  
+  p {
+      font-family: "Times New Roman";
+      font-size: 20px;
+  }
+  #header {
+    background-color:#000099;
+    color:white;
+    text-align:center;
+    padding:5px;
+  }  
+  #section {
+    width:1500px;
+    float:left;
+    padding:10px;    
+  }
+  #footer {
+    background-color:#000099;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:2px;     
+  }
+
+</style>
+</head>    
+<body onload="randomDelete()">  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+      </div>
+      <div class="col-md-6">
+        <table class="table table-bordered" id="studentTable">
+            <tr>              
+              <th>To Do</th>
+              <th>Start Date</th>
+              <th>Completion Date</th>
+              <td>Comment</td>
+              <th>Status</th>
+              <th>Delete Item</th>
+            </tr>
+            <tr id="firstRow">
+              <td>Home Work</td>
+              <td>09/12/2015</td>
+              <td>09/12/2016</td>
+              <td>Yesterday</td>
+              <td>Incomplete</td>
+              <td>
+                <button type="button" class="btn btn-default"> X </button>
+              </td>
+            </tr>            
+            <tr id="secondRow">
+              <td>More Homework</td>
+              <td>04/30/2015</td>
+              <td>12/31/2016</td>
+              <td>Completed</td>
+              <td>Vacation Now</td>
+              <td>
+                <button type="button" class="btn btn-default"> X </button>
+              </td>             
+            </tr>
+            <tr id="thirdRow">
+              <td>What Else?</td>
+              <td>06/30/2015</td>
+              <td>12/30/2015</td>
+              <td>On target</td>
+              <td>In test mode</td>
+              <td>
+                 <button type="button" class="btn btn-default"> X </button>
+              </td>
+            </tr>
+            <tr id="addRow">
+              <td id="tdtodoitem">
+                <input type="text" class="form-control" id="todoitem" placeholder="to do item">
+              </td>
+              <td id="tdstartdate">
+                <input type="date" class="form-control" id="startdate" placeholder="start date">
+              </td>
+              <td id="tddateby">
+                <input type="date" class="form-control" id="dateby" placeholder="do by date">
+              </td>
+              <td id="tddeadline">
+                <input type="text" class="form-control" id="descriptive" placeholder="comment">
+              </td>
+              <td id="tddostatus">
+                <input type="text" class="form-control" id="dostatus" placeholder="status of item">
+              </td>
+              <td>
+                <button type="button" class="btn btn-primary" id="addButton"> + </button>
+              </td>
+        </table>
+      </div>
+        <div class="col-md-3">
+        </div>
+    </div>
+  </div>
+</div>
+  <script type="text/javascript" src="js/todoapp.js"></script>
+</body>
+</html>
